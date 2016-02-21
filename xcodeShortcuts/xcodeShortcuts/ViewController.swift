@@ -12,12 +12,12 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var shortcutLabel: UILabel!
     
-    let shortcuts = ["Test 1", "Test 2", "Test 3"]
+    let shortcuts = ShortcutList()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        shortcutLabel.text = shortcuts[0]
+        shortcutLabel.text = shortcuts.shortcutsArray[0]
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func showShortcut() {
-        shortcutLabel.text = shortcuts[1]
+        shortcutLabel.text = shortcuts.shortcutsArray[1]
     }
 
 }
