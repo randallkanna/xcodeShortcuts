@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        shortcutLabel.text = shortcuts.shortcutsArray[0]
+        shortcutLabel.text = shortcuts.randomShorcut()
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,8 +26,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func showShortcut() {
-        shortcutLabel.text = shortcuts.shortcutsArray[1]
+        shortcutLabel.text = shortcuts.randomShorcut()
     }
-
 }
 
