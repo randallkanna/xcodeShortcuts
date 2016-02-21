@@ -12,8 +12,10 @@ struct ShortcutList {
     let shortcuts = [
         "⌘ + B - Build",
         "⇧ + ⌘ + K - Clean",
+        "⌘ + . - Stop",
         "⌘ + R - Run (build if needed)",
         "⌘ + U - Run tests",
+        "⌘ + ⇧ + B - Analyze",
         "⇧ + ⌘ + ⌥ + G - Rerun the last run tests",
         "F6 - Step over",
         "F7 - Step into",
@@ -48,6 +50,16 @@ struct ShortcutList {
         "⌘ + ] - Indent Selection",
         "⌘ + [ - Outdent Selection",
         "^ + i - Fix Indentation",
-        "⌘ + / - Comment/Uncomment"
+        "⌘ + / - Comment/Uncomment",
+        "⌘ + ⌥ + [ - Move Line Up",
+        "⌘ + ⌥ +  ] - Move Line Down",
+        "⌘ + ⌥ + 0 - Show/Hide Utilities",
+        "⌘ + ⌥ + 1 to 9 - Switch Utilities Tab",
+        "⌘ + ⇧ + Y - Toggle Debug Area",
+        "⌘ + ' - Next Issue",
+        "⌘ + \" - Previous Issue",
+        "⌘ + \\ - Add Breakpoint",
+        "⌘ + Y - Toggle Breakpoints",
+        "⌘ + K - Clear Console"
     ]
 }
