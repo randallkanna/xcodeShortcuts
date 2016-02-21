@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var showShortcutButton: UIButton!
     @IBOutlet weak var shortcutLabel: UILabel!
     
     let shortcuts = ShortcutList()
@@ -18,6 +19,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         shortcutLabel.text = shortcuts.randomShorcut()
+        
+        let myColor : UIColor = UIColor( red: 0, green: 0.2235, blue: 0.5373, alpha: 1.0 )
+        showShortcutButton.layer.borderColor = myColor.CGColor
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,7 +29,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func showShortcut() {
+
+    @IBAction func showShortcuts() {
         shortcutLabel.text = shortcuts.randomShorcut()
     }
 }

@@ -18,57 +18,70 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tJH-5y-ncI">
-                                <rect key="frame" x="230" y="452" width="141" height="30"/>
-                                <state key="normal" title="Show Me A Shortcut"/>
-                                <connections>
-                                    <action selector="showShortcut" destination="BYZ-38-t0r" eventType="touchUpInside" id="aCx-BW-JAp"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTf-g9-fJv">
                                 <rect key="frame" x="252" y="270" width="96" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.22352941176470587" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CkG-Dy-0ts">
+                                <rect key="frame" x="91" y="484" width="418" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="418" id="J6x-mZ-Evm"/>
+                                    <constraint firstAttribute="height" constant="75" id="JU8-h8-rSl"/>
+                                    <constraint firstAttribute="height" constant="50" id="M3l-8f-htq"/>
+                                    <constraint firstAttribute="width" constant="418" id="sSg-ke-3qB"/>
+                                </constraints>
+                                <state key="normal" title="Show Me A Shortcut">
+                                    <color key="titleColor" red="0.0" green="0.22352941176470587" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="J6x-mZ-Evm"/>
+                                        <exclude reference="JU8-h8-rSl"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="showShortcuts" destination="BYZ-38-t0r" eventType="touchUpInside" id="PrL-eQ-a68"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="XTf-g9-fJv" secondAttribute="trailing" constant="100" id="8ZA-ci-7bK"/>
-                            <constraint firstItem="tJH-5y-ncI" firstAttribute="centerX" secondItem="XTf-g9-fJv" secondAttribute="centerX" id="CO3-Tz-XYV"/>
-                            <constraint firstItem="XTf-g9-fJv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="Czy-eR-4SZ"/>
-                            <constraint firstItem="XTf-g9-fJv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FeS-BX-CgI"/>
-                            <constraint firstItem="tJH-5y-ncI" firstAttribute="centerX" secondItem="XTf-g9-fJv" secondAttribute="centerX" id="GOZ-MU-qJl"/>
+                            <constraint firstItem="CkG-Dy-0ts" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="464" id="0eJ-hm-m2N"/>
+                            <constraint firstItem="CkG-Dy-0ts" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="465" id="0nw-ob-P9e"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CkG-Dy-0ts" secondAttribute="trailing" constant="71" id="3na-KB-HPM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CkG-Dy-0ts" secondAttribute="trailing" constant="50" id="91P-gU-BdU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CkG-Dy-0ts" secondAttribute="trailing" constant="105" id="DMU-Jc-G8Z"/>
                             <constraint firstItem="XTf-g9-fJv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="235" id="JHr-1z-KiW"/>
-                            <constraint firstItem="tJH-5y-ncI" firstAttribute="centerX" secondItem="XTf-g9-fJv" secondAttribute="centerX" id="Juw-s6-8td"/>
-                            <constraint firstItem="tJH-5y-ncI" firstAttribute="top" secondItem="XTf-g9-fJv" secondAttribute="bottom" constant="107" id="ORo-mj-yEC"/>
-                            <constraint firstItem="tJH-5y-ncI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pri-Vy-zv8"/>
+                            <constraint firstItem="CkG-Dy-0ts" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="105" id="NBN-gm-NbR"/>
                             <constraint firstAttribute="trailingMargin" secondItem="XTf-g9-fJv" secondAttribute="trailing" constant="50" id="VTs-kZ-7dU"/>
-                            <constraint firstItem="XTf-g9-fJv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oee-Lz-EL8"/>
-                            <constraint firstItem="tJH-5y-ncI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="432" id="ofD-ex-RhY"/>
-                            <constraint firstItem="tJH-5y-ncI" firstAttribute="top" secondItem="XTf-g9-fJv" secondAttribute="bottom" constant="107" id="sQj-yY-7uX"/>
+                            <constraint firstItem="CkG-Dy-0ts" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mBY-g7-uDN"/>
+                            <constraint firstItem="CkG-Dy-0ts" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="qPw-A4-vZc"/>
+                            <constraint firstItem="CkG-Dy-0ts" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="71" id="tRl-SZ-PhJ"/>
                             <constraint firstItem="XTf-g9-fJv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="vpI-zc-5lC"/>
-                            <constraint firstItem="tJH-5y-ncI" firstAttribute="top" secondItem="XTf-g9-fJv" secondAttribute="bottom" constant="8" id="xX1-gj-vYl"/>
-                            <constraint firstItem="XTf-g9-fJv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ze3-3y-tBh"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="8ZA-ci-7bK"/>
-                                <exclude reference="Czy-eR-4SZ"/>
-                                <exclude reference="FeS-BX-CgI"/>
-                                <exclude reference="oee-Lz-EL8"/>
-                                <exclude reference="ze3-3y-tBh"/>
-                                <exclude reference="CO3-Tz-XYV"/>
-                                <exclude reference="GOZ-MU-qJl"/>
-                                <exclude reference="Juw-s6-8td"/>
-                                <exclude reference="ORo-mj-yEC"/>
-                                <exclude reference="sQj-yY-7uX"/>
-                                <exclude reference="xX1-gj-vYl"/>
+                                <exclude reference="0nw-ob-P9e"/>
+                                <exclude reference="3na-KB-HPM"/>
+                                <exclude reference="DMU-Jc-G8Z"/>
+                                <exclude reference="NBN-gm-NbR"/>
+                                <exclude reference="tRl-SZ-PhJ"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="shortcutLabel" destination="XTf-g9-fJv" id="46j-qQ-oye"/>
+                        <outlet property="showShortcutButton" destination="CkG-Dy-0ts" id="FRa-Ek-t3P"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
