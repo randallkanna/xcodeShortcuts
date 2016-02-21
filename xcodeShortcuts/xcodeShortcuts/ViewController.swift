@@ -10,9 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var shortcutLabel: UILabel!
+    
+    let shortcuts = ["Test 1", "Test 2", "Test 3"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        shortcutLabel.text = shortcuts[0]
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +25,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func showShortcut() {
+        shortcutLabel.text = shortcuts[1]
+    }
 
 }
 
