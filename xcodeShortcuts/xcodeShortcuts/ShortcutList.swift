@@ -65,7 +65,7 @@ struct ShortcutList {
     
     func randomShorcut() -> String {
         var unsignedArrayCount = UInt32(shortcutsArray.count)
-        var unsignedRandomNumber = arc4random_addrandom(unsignedArrayCount)
+        var unsignedRandomNumber = arc4random_uniform(unsignedArrayCount)
         var randomNumber = Int(unsignedRandomNumber)
         
         return shortcutsArray[randomNumber]

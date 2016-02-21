@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,27 +18,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTf-g9-fJv">
-                                <rect key="frame" x="279" y="289" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tJH-5y-ncI">
-                                <rect key="frame" x="275" y="318" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tJH-5y-ncI">
+                                <rect key="frame" x="230" y="452" width="141" height="30"/>
+                                <state key="normal" title="Show Me A Shortcut"/>
                                 <connections>
                                     <action selector="showShortcut" destination="BYZ-38-t0r" eventType="touchUpInside" id="aCx-BW-JAp"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTf-g9-fJv">
+                                <rect key="frame" x="252" y="270" width="96" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="XTf-g9-fJv" secondAttribute="trailing" constant="100" id="8ZA-ci-7bK"/>
                             <constraint firstItem="tJH-5y-ncI" firstAttribute="centerX" secondItem="XTf-g9-fJv" secondAttribute="centerX" id="CO3-Tz-XYV"/>
-                            <constraint firstItem="XTf-g9-fJv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aIP-dc-vX9"/>
+                            <constraint firstItem="XTf-g9-fJv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="Czy-eR-4SZ"/>
+                            <constraint firstItem="XTf-g9-fJv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FeS-BX-CgI"/>
+                            <constraint firstItem="tJH-5y-ncI" firstAttribute="centerX" secondItem="XTf-g9-fJv" secondAttribute="centerX" id="GOZ-MU-qJl"/>
+                            <constraint firstItem="XTf-g9-fJv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="235" id="JHr-1z-KiW"/>
+                            <constraint firstItem="tJH-5y-ncI" firstAttribute="centerX" secondItem="XTf-g9-fJv" secondAttribute="centerX" id="Juw-s6-8td"/>
+                            <constraint firstItem="tJH-5y-ncI" firstAttribute="top" secondItem="XTf-g9-fJv" secondAttribute="bottom" constant="107" id="ORo-mj-yEC"/>
+                            <constraint firstItem="tJH-5y-ncI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pri-Vy-zv8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XTf-g9-fJv" secondAttribute="trailing" constant="50" id="VTs-kZ-7dU"/>
+                            <constraint firstItem="XTf-g9-fJv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oee-Lz-EL8"/>
+                            <constraint firstItem="tJH-5y-ncI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="432" id="ofD-ex-RhY"/>
+                            <constraint firstItem="tJH-5y-ncI" firstAttribute="top" secondItem="XTf-g9-fJv" secondAttribute="bottom" constant="107" id="sQj-yY-7uX"/>
+                            <constraint firstItem="XTf-g9-fJv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="vpI-zc-5lC"/>
                             <constraint firstItem="tJH-5y-ncI" firstAttribute="top" secondItem="XTf-g9-fJv" secondAttribute="bottom" constant="8" id="xX1-gj-vYl"/>
                             <constraint firstItem="XTf-g9-fJv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ze3-3y-tBh"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8ZA-ci-7bK"/>
+                                <exclude reference="Czy-eR-4SZ"/>
+                                <exclude reference="FeS-BX-CgI"/>
+                                <exclude reference="oee-Lz-EL8"/>
+                                <exclude reference="ze3-3y-tBh"/>
+                                <exclude reference="CO3-Tz-XYV"/>
+                                <exclude reference="GOZ-MU-qJl"/>
+                                <exclude reference="Juw-s6-8td"/>
+                                <exclude reference="ORo-mj-yEC"/>
+                                <exclude reference="sQj-yY-7uX"/>
+                                <exclude reference="xX1-gj-vYl"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="shortcutLabel" destination="XTf-g9-fJv" id="46j-qQ-oye"/>
@@ -45,6 +73,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="380" y="324"/>
         </scene>
     </scenes>
 </document>
