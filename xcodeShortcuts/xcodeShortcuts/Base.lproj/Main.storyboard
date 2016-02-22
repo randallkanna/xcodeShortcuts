@@ -17,6 +17,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="7J4-YQ-mdz" kind="relationship" relationship="viewControllers" id="j7o-Ou-QGS"/>
+                        <segue destination="78r-Q4-Jvk" kind="relationship" relationship="viewControllers" id="Z34-xp-Pxy"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UjW-o8-70t" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -159,6 +160,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6AB-Ff-CcV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-128" y="-690"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="e6m-Nu-bQT">
+            <objects>
+                <tableViewController id="78r-Q4-Jvk" customClass="ListTableViewController" customModule="xcodeShortcuts" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="ecE-Gp-M4i">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <sections>
+                            <tableViewSection headerTitle="Shortcuts" id="w5a-Xv-5BG">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="labelCell" textLabel="Tqk-7z-K4T" style="IBUITableViewCellStyleDefault" id="vxK-Qi-7Xj">
+                                        <rect key="frame" x="0.0" y="50" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vxK-Qi-7Xj" id="uoE-6F-d4F">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Tqk-7z-K4T">
+                                                    <rect key="frame" x="15" y="0.0" width="570" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="78r-Q4-Jvk" id="xX1-15-eBm"/>
+                            <outlet property="delegate" destination="78r-Q4-Jvk" id="JdF-za-G2q"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="hoL-N7-FT6"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dc9-cc-cIh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-128" y="51"/>
         </scene>
     </scenes>
     <resources>

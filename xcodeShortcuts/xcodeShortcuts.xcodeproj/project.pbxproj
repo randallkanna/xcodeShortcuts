@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B5225AFB1C7AB1FB00D0D73D /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5225AF91C7AB1FB00D0D73D /* Fabric.framework */; };
 		B5225AFC1C7AB1FB00D0D73D /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5225AFA1C7AB1FB00D0D73D /* Crashlytics.framework */; };
+		B5225B061C7AEB2F00D0D73D /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5225B051C7AEB2F00D0D73D /* ListTableViewController.swift */; };
 		B531E77F1C7A408800E87AE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B531E77E1C7A408800E87AE9 /* AppDelegate.swift */; };
 		B531E7841C7A408800E87AE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B531E7821C7A408800E87AE9 /* Main.storyboard */; };
 		B531E7861C7A408800E87AE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B531E7851C7A408800E87AE9 /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		B5225AF91C7AB1FB00D0D73D /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		B5225AFA1C7AB1FB00D0D73D /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		B5225B051C7AEB2F00D0D73D /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		B531E77B1C7A408800E87AE9 /* xcodeShortcuts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xcodeShortcuts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B531E77E1C7A408800E87AE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B531E7831C7A408800E87AE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			children = (
 				B531E77E1C7A408800E87AE9 /* AppDelegate.swift */,
 				B531E7B21C7A901600E87AE9 /* RandomShortcutViewController.swift */,
+				B5225B051C7AEB2F00D0D73D /* ListTableViewController.swift */,
 				B531E7AC1C7A4B7600E87AE9 /* ShortcutList.swift */,
 				B531E7821C7A408800E87AE9 /* Main.storyboard */,
 				B531E7851C7A408800E87AE9 /* Assets.xcassets */,
@@ -289,6 +292,7 @@
 				B531E7B31C7A901600E87AE9 /* RandomShortcutViewController.swift in Sources */,
 				B531E77F1C7A408800E87AE9 /* AppDelegate.swift in Sources */,
 				B531E7AD1C7A4B7600E87AE9 /* ShortcutList.swift in Sources */,
+				B5225B061C7AEB2F00D0D73D /* ListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

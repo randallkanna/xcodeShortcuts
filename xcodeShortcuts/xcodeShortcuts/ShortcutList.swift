@@ -159,7 +159,15 @@ struct ShortcutList {
         "⌘ + / - Comment/Uncomment"
     ]
     
-//    func returnAll() -> 
+    func returnAll() -> Array<String> {
+        var completeList: [String] = []
+        
+        for i in 1...completeShortcutsList.count {
+            completeList.append(completeShortcutsList[i])
+        }
+        
+        return completeList
+    }
     
     func randomShortcut() -> Array<String> {
         let unsignedArrayCount = UInt32(shortcutsArray.count)

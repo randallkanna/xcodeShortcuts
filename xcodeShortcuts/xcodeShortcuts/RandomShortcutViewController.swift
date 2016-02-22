@@ -11,9 +11,7 @@ import UIKit
 class RandomShortcutViewController: UIViewController {
 
     @IBOutlet weak var shortcutLabel: UILabel!
-    
     @IBOutlet weak var shortcutDescriptionLabel: UILabel!
-    
     @IBOutlet weak var showShortcutButton: UIButton!
     
     let shortcuts = ShortcutList()
