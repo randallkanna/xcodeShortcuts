@@ -31,15 +31,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pP2-9g-PW6">
-                                <rect key="frame" x="91" y="476" width="418" height="75"/>
+                                <rect key="frame" x="75" y="517" width="450" height="75"/>
+                                <color key="backgroundColor" red="0.0" green="0.22352941176470587" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="418" id="HTw-Dr-Dvu"/>
-                                    <constraint firstAttribute="height" constant="75" id="Rx3-ff-FG9"/>
-                                    <constraint firstAttribute="height" constant="50" id="mCr-Zh-dix"/>
-                                    <constraint firstAttribute="width" constant="418" id="vfX-Fa-2ty"/>
+                                    <constraint firstAttribute="width" constant="450" id="Jjj-5p-kus"/>
+                                    <constraint firstAttribute="width" constant="418" id="Tfb-K6-zXI"/>
+                                    <constraint firstAttribute="height" constant="75" id="YFN-Af-v3J"/>
+                                    <constraint firstAttribute="height" constant="80" id="o7O-Oz-meK"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal" title="Random Shortcut">
-                                    <color key="titleColor" red="0.0" green="0.22352941179999999" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.93033854166666663" green="0.8945225248848484" blue="0.92732275428110433" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
@@ -51,8 +53,8 @@
                                 </userDefinedRuntimeAttributes>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="Rx3-ff-FG9"/>
-                                        <exclude reference="vfX-Fa-2ty"/>
+                                        <exclude reference="Tfb-K6-zXI"/>
+                                        <exclude reference="o7O-Oz-meK"/>
                                     </mask>
                                 </variation>
                                 <connections>
@@ -65,20 +67,24 @@
                             <constraint firstItem="lte-C9-8cd" firstAttribute="leading" secondItem="8y3-Gi-EZ0" secondAttribute="leadingMargin" constant="25" id="0tI-Bi-ZEe"/>
                             <constraint firstItem="ZkD-1u-qqP" firstAttribute="centerX" secondItem="8y3-Gi-EZ0" secondAttribute="centerX" id="1Lj-8K-4NU"/>
                             <constraint firstItem="lte-C9-8cd" firstAttribute="top" secondItem="gJN-sm-a8r" secondAttribute="bottom" constant="139" id="1VI-km-Sqh"/>
-                            <constraint firstItem="pP2-9g-PW6" firstAttribute="leading" secondItem="8y3-Gi-EZ0" secondAttribute="leadingMargin" constant="71" id="32j-mp-AbO"/>
-                            <constraint firstItem="pP2-9g-PW6" firstAttribute="centerX" secondItem="8y3-Gi-EZ0" secondAttribute="centerX" id="355-7x-b3z"/>
-                            <constraint firstItem="pP2-9g-PW6" firstAttribute="leading" secondItem="8y3-Gi-EZ0" secondAttribute="leadingMargin" constant="25" id="IJx-GI-hXa"/>
+                            <constraint firstItem="pP2-9g-PW6" firstAttribute="top" secondItem="gJN-sm-a8r" secondAttribute="bottom" constant="497" id="6Yb-Da-mtd"/>
+                            <constraint firstItem="pP2-9g-PW6" firstAttribute="leading" secondItem="8y3-Gi-EZ0" secondAttribute="leadingMargin" constant="15" id="AYH-V4-e1o"/>
+                            <constraint firstItem="pP2-9g-PW6" firstAttribute="centerX" secondItem="8y3-Gi-EZ0" secondAttribute="centerX" id="FBM-uE-Oc1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pP2-9g-PW6" secondAttribute="trailing" constant="53" id="Keo-gu-ewL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lte-C9-8cd" secondAttribute="trailing" constant="25" id="OfQ-7e-Oen"/>
                             <constraint firstItem="lte-C9-8cd" firstAttribute="centerX" secondItem="8y3-Gi-EZ0" secondAttribute="centerX" id="XFM-Vv-vWc"/>
-                            <constraint firstItem="pP2-9g-PW6" firstAttribute="leading" secondItem="8y3-Gi-EZ0" secondAttribute="leadingMargin" constant="71" id="cLH-HS-vDu"/>
-                            <constraint firstItem="pP2-9g-PW6" firstAttribute="top" secondItem="gJN-sm-a8r" secondAttribute="bottom" constant="456" id="ew6-Hq-SSu"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="pP2-9g-PW6" secondAttribute="trailing" constant="25" id="h99-3H-xyH"/>
+                            <constraint firstItem="pP2-9g-PW6" firstAttribute="centerX" secondItem="8y3-Gi-EZ0" secondAttribute="centerX" id="k5P-74-fpO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pP2-9g-PW6" secondAttribute="trailing" constant="15" id="pKW-PU-hJB"/>
                             <constraint firstItem="ZkD-1u-qqP" firstAttribute="top" secondItem="gJN-sm-a8r" secondAttribute="bottom" constant="359" id="rIp-3o-k1T"/>
+                            <constraint firstItem="pP2-9g-PW6" firstAttribute="leading" secondItem="8y3-Gi-EZ0" secondAttribute="leadingMargin" constant="89" id="yX4-DK-WNk"/>
+                            <constraint firstItem="pP2-9g-PW6" firstAttribute="top" secondItem="gJN-sm-a8r" secondAttribute="bottom" constant="497" id="yeQ-eo-tas"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="32j-mp-AbO"/>
-                                <exclude reference="355-7x-b3z"/>
+                                <exclude reference="6Yb-Da-mtd"/>
+                                <exclude reference="FBM-uE-Oc1"/>
+                                <exclude reference="Keo-gu-ewL"/>
+                                <exclude reference="yX4-DK-WNk"/>
                             </mask>
                         </variation>
                     </view>
