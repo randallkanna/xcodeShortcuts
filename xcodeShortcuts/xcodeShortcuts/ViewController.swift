@@ -24,9 +24,6 @@ class ViewController: UIViewController {
         shortcutLabel.text = shortcutItem[0]
         shortcutDescriptionLabel.text = shortcutItem[1]
         
-//        shortcutLabel.text = shortcuts.randomShorcut()
-//        shortcutDescriptionLabel.text = shortcuts.randomShorcut()
-        
         let myColor : UIColor = UIColor( red: 0, green: 0.2235, blue: 0.5373, alpha: 1.0 )
         showShortcutButton.layer.borderColor = myColor.CGColor
     }
@@ -41,9 +38,6 @@ class ViewController: UIViewController {
     
         shortcutLabel.text = shortcutItem[0]
         shortcutDescriptionLabel.text = shortcutItem[1]
-        
-//        shortcutLabel.text = shortcuts.randomShorcut()
-//        shortcutDescriptionLabel.text = shortcuts.randomShorcut()
     }
 }
 
