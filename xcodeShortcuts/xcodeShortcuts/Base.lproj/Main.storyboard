@@ -1,11 +1,59 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bHj-mj-ZG0">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Table View Controller-->
+        <scene sceneID="hR0-KJ-Ubd">
+            <objects>
+                <tableViewController id="egR-rV-Y85" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="C3g-6S-XbU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ajb-7K-1TZ">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ajb-7K-1TZ" id="at0-Yt-sRD">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="egR-rV-Y85" id="0B3-ON-mEK"/>
+                            <outlet property="delegate" destination="egR-rV-Y85" id="ejk-C7-owO"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="" systemItem="more" id="5IL-6G-rFf"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zwR-h5-GCe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-264" y="719"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="e7a-GN-C5d">
+            <objects>
+                <tabBarController id="bHj-mj-ZG0" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="1zp-Wq-aOY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="77Q-tj-rs7"/>
+                        <segue destination="7J4-YQ-mdz" kind="relationship" relationship="viewControllers" id="00d-yw-Ypd"/>
+                        <segue destination="egR-rV-Y85" kind="relationship" relationship="viewControllers" id="T9z-ph-7q1"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="btc-GO-dLc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1084" y="359"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -30,16 +78,69 @@
                                 <color key="textColor" red="0.0" green="0.22352941176470587" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CkG-Dy-0ts">
-                                <rect key="frame" x="91" y="505" width="418" height="75"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wFQ-1r-AJf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="378" id="B7P-Rh-cAa"/>
+                            <constraint firstItem="XTf-g9-fJv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="E9C-HM-eti"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XTf-g9-fJv" secondAttribute="trailing" constant="25" id="GhQ-5x-1dh"/>
+                            <constraint firstItem="XTf-g9-fJv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="235" id="JHr-1z-KiW"/>
+                            <constraint firstItem="wFQ-1r-AJf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y6n-Cb-4LA"/>
+                            <constraint firstItem="XTf-g9-fJv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kaO-fs-Gvq"/>
+                            <constraint firstItem="XTf-g9-fJv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="141" id="r5m-nV-aNf"/>
+                            <constraint firstItem="XTf-g9-fJv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="vpI-zc-5lC"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="JHr-1z-KiW"/>
+                                <exclude reference="vpI-zc-5lC"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="featured" id="pQw-d7-uWh"/>
+                    <connections>
+                        <outlet property="shortcutDescriptionLabel" destination="wFQ-1r-AJf" id="qy8-Eh-HMe"/>
+                        <outlet property="shortcutLabel" destination="XTf-g9-fJv" id="46j-qQ-oye"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1084" y="1284"/>
+        </scene>
+        <!--Random Shortcut-->
+        <scene sceneID="UCv-M1-N2c">
+            <objects>
+                <viewController id="7J4-YQ-mdz" customClass="RandomShortcutViewController" customModule="xcodeShortcuts" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gJN-sm-a8r"/>
+                        <viewControllerLayoutGuide type="bottom" id="pDB-DN-hSm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8y3-Gi-EZ0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lte-C9-8cd">
+                                <rect key="frame" x="193" y="159" width="215" height="72"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="70"/>
+                                <color key="textColor" red="0.0" green="0.22352941179999999" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZkD-1u-qqP">
+                                <rect key="frame" x="279" y="379" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.22352941179999999" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pP2-9g-PW6">
+                                <rect key="frame" x="91" y="476" width="418" height="75"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="418" id="J6x-mZ-Evm"/>
-                                    <constraint firstAttribute="height" constant="75" id="JU8-h8-rSl"/>
-                                    <constraint firstAttribute="height" constant="50" id="M3l-8f-htq"/>
-                                    <constraint firstAttribute="width" constant="418" id="sSg-ke-3qB"/>
+                                    <constraint firstAttribute="width" constant="418" id="HTw-Dr-Dvu"/>
+                                    <constraint firstAttribute="height" constant="75" id="Rx3-ff-FG9"/>
+                                    <constraint firstAttribute="height" constant="50" id="mCr-Zh-dix"/>
+                                    <constraint firstAttribute="width" constant="418" id="vfX-Fa-2ty"/>
                                 </constraints>
                                 <state key="normal" title="Random Shortcut">
-                                    <color key="titleColor" red="0.0" green="0.22352941176470587" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.22352941179999999" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
@@ -51,48 +152,45 @@
                                 </userDefinedRuntimeAttributes>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="J6x-mZ-Evm"/>
-                                        <exclude reference="JU8-h8-rSl"/>
+                                        <exclude reference="vfX-Fa-2ty"/>
+                                        <exclude reference="Rx3-ff-FG9"/>
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="showShortcuts" destination="BYZ-38-t0r" eventType="touchUpInside" id="PrL-eQ-a68"/>
+                                    <action selector="showShortcuts" destination="7J4-YQ-mdz" eventType="touchUpInside" id="c6y-79-SDT"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="CkG-Dy-0ts" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="464" id="0eJ-hm-m2N"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="CkG-Dy-0ts" secondAttribute="trailing" constant="50" id="91P-gU-BdU"/>
-                            <constraint firstItem="wFQ-1r-AJf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="378" id="B7P-Rh-cAa"/>
-                            <constraint firstItem="XTf-g9-fJv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="E9C-HM-eti"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="XTf-g9-fJv" secondAttribute="trailing" constant="25" id="GhQ-5x-1dh"/>
-                            <constraint firstItem="XTf-g9-fJv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="235" id="JHr-1z-KiW"/>
-                            <constraint firstItem="wFQ-1r-AJf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y6n-Cb-4LA"/>
-                            <constraint firstItem="XTf-g9-fJv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kaO-fs-Gvq"/>
-                            <constraint firstItem="CkG-Dy-0ts" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mBY-g7-uDN"/>
-                            <constraint firstItem="CkG-Dy-0ts" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="485" id="nBR-SK-AuO"/>
-                            <constraint firstItem="CkG-Dy-0ts" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="qPw-A4-vZc"/>
-                            <constraint firstItem="XTf-g9-fJv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="141" id="r5m-nV-aNf"/>
-                            <constraint firstItem="XTf-g9-fJv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="vpI-zc-5lC"/>
+                            <constraint firstItem="ZkD-1u-qqP" firstAttribute="centerX" secondItem="8y3-Gi-EZ0" secondAttribute="centerX" id="1Lj-8K-4NU"/>
+                            <constraint firstItem="lte-C9-8cd" firstAttribute="top" secondItem="gJN-sm-a8r" secondAttribute="bottom" constant="139" id="1VI-km-Sqh"/>
+                            <constraint firstItem="pP2-9g-PW6" firstAttribute="leading" secondItem="8y3-Gi-EZ0" secondAttribute="leadingMargin" constant="71" id="32j-mp-AbO"/>
+                            <constraint firstItem="pP2-9g-PW6" firstAttribute="centerX" secondItem="8y3-Gi-EZ0" secondAttribute="centerX" id="355-7x-b3z"/>
+                            <constraint firstItem="pP2-9g-PW6" firstAttribute="leading" secondItem="8y3-Gi-EZ0" secondAttribute="leadingMargin" constant="25" id="IJx-GI-hXa"/>
+                            <constraint firstItem="lte-C9-8cd" firstAttribute="centerX" secondItem="8y3-Gi-EZ0" secondAttribute="centerX" id="XFM-Vv-vWc"/>
+                            <constraint firstItem="pP2-9g-PW6" firstAttribute="leading" secondItem="8y3-Gi-EZ0" secondAttribute="leadingMargin" constant="71" id="cLH-HS-vDu"/>
+                            <constraint firstItem="pP2-9g-PW6" firstAttribute="top" secondItem="gJN-sm-a8r" secondAttribute="bottom" constant="456" id="ew6-Hq-SSu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pP2-9g-PW6" secondAttribute="trailing" constant="25" id="h99-3H-xyH"/>
+                            <constraint firstItem="ZkD-1u-qqP" firstAttribute="top" secondItem="gJN-sm-a8r" secondAttribute="bottom" constant="359" id="rIp-3o-k1T"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="JHr-1z-KiW"/>
-                                <exclude reference="vpI-zc-5lC"/>
-                                <exclude reference="0eJ-hm-m2N"/>
+                                <exclude reference="32j-mp-AbO"/>
+                                <exclude reference="355-7x-b3z"/>
                             </mask>
                         </variation>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Random Shortcut" id="MgS-xJ-Fkf"/>
                     <connections>
-                        <outlet property="shortcutDescriptionLabel" destination="wFQ-1r-AJf" id="qy8-Eh-HMe"/>
-                        <outlet property="shortcutLabel" destination="XTf-g9-fJv" id="46j-qQ-oye"/>
-                        <outlet property="showShortcutButton" destination="CkG-Dy-0ts" id="FRa-Ek-t3P"/>
+                        <outlet property="shortcutDescriptionLabel" destination="ZkD-1u-qqP" id="ma0-os-H71"/>
+                        <outlet property="shortcutLabel" destination="lte-C9-8cd" id="qNl-b3-OCS"/>
+                        <outlet property="showShortcutButton" destination="pP2-9g-PW6" id="aTX-DG-7dU"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6AB-Ff-CcV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="380" y="324"/>
+            <point key="canvasLocation" x="-264" y="-24"/>
         </scene>
     </scenes>
 </document>
