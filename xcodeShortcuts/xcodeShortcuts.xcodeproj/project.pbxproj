@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5225AFB1C7AB1FB00D0D73D /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5225AF91C7AB1FB00D0D73D /* Fabric.framework */; };
+		B5225AFC1C7AB1FB00D0D73D /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5225AFA1C7AB1FB00D0D73D /* Crashlytics.framework */; };
 		B531E77F1C7A408800E87AE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B531E77E1C7A408800E87AE9 /* AppDelegate.swift */; };
 		B531E7841C7A408800E87AE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B531E7821C7A408800E87AE9 /* Main.storyboard */; };
 		B531E7861C7A408800E87AE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B531E7851C7A408800E87AE9 /* Assets.xcassets */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B5225AF91C7AB1FB00D0D73D /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		B5225AFA1C7AB1FB00D0D73D /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		B531E77B1C7A408800E87AE9 /* xcodeShortcuts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xcodeShortcuts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B531E77E1C7A408800E87AE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B531E7831C7A408800E87AE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5225AFC1C7AB1FB00D0D73D /* Crashlytics.framework in Frameworks */,
+				B5225AFB1C7AB1FB00D0D73D /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +89,8 @@
 				B531E7921C7A408800E87AE9 /* xcodeShortcutsTests */,
 				B531E79D1C7A408800E87AE9 /* xcodeShortcutsUITests */,
 				B531E77C1C7A408800E87AE9 /* Products */,
+				B5225AF91C7AB1FB00D0D73D /* Fabric.framework */,
+				B5225AFA1C7AB1FB00D0D73D /* Crashlytics.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,6 +146,7 @@
 				B531E7771C7A408800E87AE9 /* Sources */,
 				B531E7781C7A408800E87AE9 /* Frameworks */,
 				B531E7791C7A408800E87AE9 /* Resources */,
+				B5225AF81C7AB1BB00D0D73D /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -254,6 +263,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B5225AF81C7AB1BB00D0D73D /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run cf7d5f66795e9debe73443fd46122bc218738d82 b9d0e5dcd76570ed205c32e0f655a31014a5a3455b3f92025ed776e916573395";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B531E7771C7A408800E87AE9 /* Sources */ = {
@@ -403,6 +429,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = xcodeShortcuts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.randallkanna.xcodeShortcuts;
@@ -415,6 +445,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = xcodeShortcuts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.randallkanna.xcodeShortcuts;
