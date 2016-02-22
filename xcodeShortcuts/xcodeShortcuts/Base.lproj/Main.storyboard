@@ -1,11 +1,48 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7J4-YQ-mdz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QNH-1S-5TF">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Item 2-->
+        <scene sceneID="jwq-KX-RLc">
+            <objects>
+                <viewController id="x4Z-Qm-pqb" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oZE-LX-ha0"/>
+                        <viewControllerLayoutGuide type="bottom" id="z3p-BE-hVT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zfg-gU-8iw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="535-mH-nNb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T18-HZ-3j3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-128" y="32"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Qcb-Qc-w0X">
+            <objects>
+                <tabBarController id="QNH-1S-5TF" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="n12-e6-Cw3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="7J4-YQ-mdz" kind="relationship" relationship="viewControllers" id="j7o-Ou-QGS"/>
+                        <segue destination="x4Z-Qm-pqb" kind="relationship" relationship="viewControllers" id="j95-p4-9dO"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UjW-o8-70t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-948" y="-298"/>
+        </scene>
         <!--Random Shortcut View Controller-->
         <scene sceneID="UCv-M1-N2c">
             <objects>
@@ -88,7 +125,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="more" id="MgS-xJ-Fkf"/>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="MgS-xJ-Fkf"/>
                     <connections>
                         <outlet property="shortcutDescriptionLabel" destination="ZkD-1u-qqP" id="ma0-os-H71"/>
                         <outlet property="shortcutLabel" destination="lte-C9-8cd" id="qNl-b3-OCS"/>
@@ -97,7 +134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6AB-Ff-CcV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-264" y="-24"/>
+            <point key="canvasLocation" x="-128" y="-690"/>
         </scene>
     </scenes>
 </document>
