@@ -116,6 +116,50 @@ struct ShortcutList {
         "⌘ + Y",
         "⌘ + K"
     ]
+
+    let completeShortcutsList = [
+        "⌘ + B - Build",
+        "⇧ + ⌘ + K - Clean",
+        "⌘ + R - Run (build if needed)",
+        "⌘ + U - Run tests",
+        "⇧ + ⌘ + ⌥ + G - Rerun the last run tests",
+        "F6 - Step over",
+        "F7 - Step into",
+        "⌘ + \\  - Add remove breakpoint",
+        "⌘ + Y - Disable/enable all breakpoints",
+        "⌃ + ⌘ + Y - Pause/Play the Debugger",
+        "⌘ + F - Find in file",
+        "⌘ + ⌥ + F - Find and Replace in Project",
+        "⇧ + ⌘ + F - Find in Project",
+        "⌘ + ⌥ + ⇧ + F - Find and Replace in Project",
+        "⌘ + T - New Tab",
+        "⌘ + } - Previous Tab",
+        "⌘ + { - Next Tab",
+        "⌘ + 0 - Show/Hide Navigator",
+        "⌘ + 1 to 8 - Switch Tabs in Navigator",
+        "⌘ + ⌥ ? - Show Documentation",
+        "⌘ + ⌥ + ^ + / -  Documentation for Selection",
+        "⌘ + ⇧ + O - Open quickly",
+        "⌘ + J - Move Focus to Editor",
+        "⌘ + ^ + UP - Next Counterpart in Navigation",
+        "⌘ + ^ + DOWN - Previous Counterpart in Navigation",
+        "⌘ + ^ + RIGHT - Next Recent File",
+        "⌘ + ^ + LEFT - Previous Recent File",
+        "⌘ + Click - Definition of Symbol",
+        "⌘ + L - Go to Line",
+        "⌘ + ⌥ + LEFT - Fold Selection",
+        "⌘ + ⌥ + RIGHT - Unfold Selection",
+        "⌘ + ⌥ + RETURN - Show Assistant Editor",
+        "⌘ + RETURN - Hide Assistant Editor",
+        "^ + SPACE - Toggle Completions",
+        "⌘ + ^ + E - Edit All In Scope",
+        "⌘ + ] - Indent Selection",
+        "⌘ + [ - Outdent Selection",
+        "^ + i - Fix Indentation",
+        "⌘ + / - Comment/Uncomment"
+    ]
+    
+//    func returnAll() -> 
     
     func randomShortcut() -> Array<String> {
         let unsignedArrayCount = UInt32(shortcutsArray.count)
