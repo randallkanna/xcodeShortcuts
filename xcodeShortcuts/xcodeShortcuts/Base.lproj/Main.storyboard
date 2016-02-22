@@ -77,7 +77,7 @@
             </objects>
             <point key="canvasLocation" x="-1084" y="1284"/>
         </scene>
-        <!--Random Shortcut-->
+        <!--Random Shortcut View Controller-->
         <scene sceneID="UCv-M1-N2c">
             <objects>
                 <viewController id="7J4-YQ-mdz" customClass="RandomShortcutViewController" customModule="xcodeShortcuts" customModuleProvider="target" sceneMemberID="viewController">
@@ -153,7 +153,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Random Shortcut" id="MgS-xJ-Fkf"/>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="MgS-xJ-Fkf"/>
                     <connections>
                         <outlet property="shortcutDescriptionLabel" destination="ZkD-1u-qqP" id="ma0-os-H71"/>
                         <outlet property="shortcutLabel" destination="lte-C9-8cd" id="qNl-b3-OCS"/>
