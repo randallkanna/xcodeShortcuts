@@ -152,8 +152,8 @@
                                 </userDefinedRuntimeAttributes>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="vfX-Fa-2ty"/>
                                         <exclude reference="Rx3-ff-FG9"/>
+                                        <exclude reference="vfX-Fa-2ty"/>
                                     </mask>
                                 </variation>
                                 <connections>
@@ -163,11 +163,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="lte-C9-8cd" firstAttribute="leading" secondItem="8y3-Gi-EZ0" secondAttribute="leadingMargin" constant="25" id="0tI-Bi-ZEe"/>
                             <constraint firstItem="ZkD-1u-qqP" firstAttribute="centerX" secondItem="8y3-Gi-EZ0" secondAttribute="centerX" id="1Lj-8K-4NU"/>
                             <constraint firstItem="lte-C9-8cd" firstAttribute="top" secondItem="gJN-sm-a8r" secondAttribute="bottom" constant="139" id="1VI-km-Sqh"/>
                             <constraint firstItem="pP2-9g-PW6" firstAttribute="leading" secondItem="8y3-Gi-EZ0" secondAttribute="leadingMargin" constant="71" id="32j-mp-AbO"/>
                             <constraint firstItem="pP2-9g-PW6" firstAttribute="centerX" secondItem="8y3-Gi-EZ0" secondAttribute="centerX" id="355-7x-b3z"/>
                             <constraint firstItem="pP2-9g-PW6" firstAttribute="leading" secondItem="8y3-Gi-EZ0" secondAttribute="leadingMargin" constant="25" id="IJx-GI-hXa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lte-C9-8cd" secondAttribute="trailing" constant="25" id="OfQ-7e-Oen"/>
                             <constraint firstItem="lte-C9-8cd" firstAttribute="centerX" secondItem="8y3-Gi-EZ0" secondAttribute="centerX" id="XFM-Vv-vWc"/>
                             <constraint firstItem="pP2-9g-PW6" firstAttribute="leading" secondItem="8y3-Gi-EZ0" secondAttribute="leadingMargin" constant="71" id="cLH-HS-vDu"/>
                             <constraint firstItem="pP2-9g-PW6" firstAttribute="top" secondItem="gJN-sm-a8r" secondAttribute="bottom" constant="456" id="ew6-Hq-SSu"/>
