@@ -15,7 +15,6 @@
 		B531E7941C7A408800E87AE9 /* xcodeShortcutsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B531E7931C7A408800E87AE9 /* xcodeShortcutsTests.swift */; };
 		B531E79F1C7A408800E87AE9 /* xcodeShortcutsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B531E79E1C7A408800E87AE9 /* xcodeShortcutsUITests.swift */; };
 		B531E7AD1C7A4B7600E87AE9 /* ShortcutList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B531E7AC1C7A4B7600E87AE9 /* ShortcutList.swift */; };
-		B531E7B11C7A8D8000E87AE9 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B531E7B01C7A8D8000E87AE9 /* ListViewController.swift */; };
 		B531E7B31C7A901600E87AE9 /* RandomShortcutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B531E7B21C7A901600E87AE9 /* RandomShortcutViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +50,6 @@
 		B531E79E1C7A408800E87AE9 /* xcodeShortcutsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xcodeShortcutsUITests.swift; sourceTree = "<group>"; };
 		B531E7A01C7A408800E87AE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B531E7AC1C7A4B7600E87AE9 /* ShortcutList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShortcutList.swift; sourceTree = "<group>"; };
-		B531E7B01C7A8D8000E87AE9 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		B531E7B21C7A901600E87AE9 /* RandomShortcutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomShortcutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,7 +104,6 @@
 				B531E77E1C7A408800E87AE9 /* AppDelegate.swift */,
 				B531E7801C7A408800E87AE9 /* ViewController.swift */,
 				B531E7B21C7A901600E87AE9 /* RandomShortcutViewController.swift */,
-				B531E7B01C7A8D8000E87AE9 /* ListViewController.swift */,
 				B531E7AC1C7A4B7600E87AE9 /* ShortcutList.swift */,
 				B531E7821C7A408800E87AE9 /* Main.storyboard */,
 				B531E7851C7A408800E87AE9 /* Assets.xcassets */,
@@ -268,7 +265,6 @@
 				B531E7B31C7A901600E87AE9 /* RandomShortcutViewController.swift in Sources */,
 				B531E7811C7A408800E87AE9 /* ViewController.swift in Sources */,
 				B531E77F1C7A408800E87AE9 /* AppDelegate.swift in Sources */,
-				B531E7B11C7A8D8000E87AE9 /* ListViewController.swift in Sources */,
 				B531E7AD1C7A4B7600E87AE9 /* ShortcutList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,6 +490,7 @@
 				B531E7A51C7A408800E87AE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B531E7A61C7A408800E87AE9 /* Build configuration list for PBXNativeTarget "xcodeShortcutsTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +499,7 @@
 				B531E7A81C7A408800E87AE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B531E7A91C7A408800E87AE9 /* Build configuration list for PBXNativeTarget "xcodeShortcutsUITests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +508,7 @@
 				B531E7AB1C7A408800E87AE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
