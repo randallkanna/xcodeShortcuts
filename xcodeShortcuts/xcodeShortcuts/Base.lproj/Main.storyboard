@@ -46,13 +46,13 @@
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="77Q-tj-rs7"/>
+                        <segue destination="7J4-YQ-mdz" kind="relationship" relationship="viewControllers" id="00d-yw-Ypd"/>
                         <segue destination="egR-rV-Y85" kind="relationship" relationship="viewControllers" id="T9z-ph-7q1"/>
-                        <segue destination="B1e-kY-GfG" kind="relationship" relationship="viewControllers" id="g2G-tu-PSr"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="btc-GO-dLc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1084" y="369"/>
+            <point key="canvasLocation" x="-1084" y="359"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -107,37 +107,37 @@
             </objects>
             <point key="canvasLocation" x="-1084" y="1284"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="5pb-HQ-9bG">
+        <!--Random Shortcut-->
+        <scene sceneID="UCv-M1-N2c">
             <objects>
-                <viewController id="B1e-kY-GfG" customClass="ViewController" customModule="xcodeShortcuts" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="7J4-YQ-mdz" customClass="RandomShortcutViewController" customModule="xcodeShortcuts" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="J0L-Sb-ykS"/>
-                        <viewControllerLayoutGuide type="bottom" id="5vX-oy-nD7"/>
+                        <viewControllerLayoutGuide type="top" id="gJN-sm-a8r"/>
+                        <viewControllerLayoutGuide type="bottom" id="pDB-DN-hSm"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="RIV-2V-LaF">
+                    <view key="view" contentMode="scaleToFill" id="8y3-Gi-EZ0">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5v-jm-0iO">
-                                <rect key="frame" x="193" y="161" width="215" height="72"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lte-C9-8cd">
+                                <rect key="frame" x="193" y="159" width="215" height="72"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="70"/>
                                 <color key="textColor" red="0.0" green="0.22352941179999999" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2c-rf-mHA">
-                                <rect key="frame" x="279" y="398" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZkD-1u-qqP">
+                                <rect key="frame" x="279" y="379" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.22352941179999999" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjH-aU-vKa">
-                                <rect key="frame" x="91" y="505" width="418" height="75"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pP2-9g-PW6">
+                                <rect key="frame" x="91" y="476" width="418" height="75"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="Acm-Jp-xjL"/>
-                                    <constraint firstAttribute="width" constant="418" id="Dk4-4u-qaP"/>
-                                    <constraint firstAttribute="width" constant="418" id="SZP-2x-hX6"/>
-                                    <constraint firstAttribute="height" constant="50" id="s0c-S2-waU"/>
+                                    <constraint firstAttribute="width" constant="418" id="HTw-Dr-Dvu"/>
+                                    <constraint firstAttribute="height" constant="75" id="Rx3-ff-FG9"/>
+                                    <constraint firstAttribute="height" constant="50" id="mCr-Zh-dix"/>
+                                    <constraint firstAttribute="width" constant="418" id="vfX-Fa-2ty"/>
                                 </constraints>
                                 <state key="normal" title="Random Shortcut">
                                     <color key="titleColor" red="0.0" green="0.22352941179999999" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -152,49 +152,45 @@
                                 </userDefinedRuntimeAttributes>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="SZP-2x-hX6"/>
-                                        <exclude reference="Acm-Jp-xjL"/>
+                                        <exclude reference="vfX-Fa-2ty"/>
+                                        <exclude reference="Rx3-ff-FG9"/>
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="showShortcuts" destination="B1e-kY-GfG" eventType="touchUpInside" id="21N-f5-Imc"/>
+                                    <action selector="showShortcuts" destination="7J4-YQ-mdz" eventType="touchUpInside" id="c6y-79-SDT"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="sjH-aU-vKa" firstAttribute="top" secondItem="J0L-Sb-ykS" secondAttribute="bottom" constant="464" id="EmD-4A-X62"/>
-                            <constraint firstItem="W5v-jm-0iO" firstAttribute="top" secondItem="J0L-Sb-ykS" secondAttribute="bottom" constant="235" id="HbM-fq-sWS"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="W5v-jm-0iO" secondAttribute="trailing" constant="25" id="c1i-8c-BPb"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="sjH-aU-vKa" secondAttribute="trailing" constant="50" id="fb1-PA-ERb"/>
-                            <constraint firstItem="W5v-jm-0iO" firstAttribute="top" secondItem="J0L-Sb-ykS" secondAttribute="bottom" constant="141" id="hoz-Of-y91"/>
-                            <constraint firstItem="e2c-rf-mHA" firstAttribute="centerX" secondItem="RIV-2V-LaF" secondAttribute="centerX" id="oUV-Ze-tmU"/>
-                            <constraint firstItem="W5v-jm-0iO" firstAttribute="leading" secondItem="RIV-2V-LaF" secondAttribute="leadingMargin" constant="50" id="pBx-yh-FZt"/>
-                            <constraint firstItem="sjH-aU-vKa" firstAttribute="top" secondItem="J0L-Sb-ykS" secondAttribute="bottom" constant="485" id="uPd-8U-jcA"/>
-                            <constraint firstItem="sjH-aU-vKa" firstAttribute="centerX" secondItem="RIV-2V-LaF" secondAttribute="centerX" id="uel-II-odt"/>
-                            <constraint firstItem="W5v-jm-0iO" firstAttribute="centerX" secondItem="RIV-2V-LaF" secondAttribute="centerX" id="wu5-43-MhQ"/>
-                            <constraint firstItem="sjH-aU-vKa" firstAttribute="leading" secondItem="RIV-2V-LaF" secondAttribute="leadingMargin" constant="50" id="x7P-pc-uLo"/>
-                            <constraint firstItem="W5v-jm-0iO" firstAttribute="leading" secondItem="RIV-2V-LaF" secondAttribute="leadingMargin" constant="25" id="z0m-Zx-PRu"/>
-                            <constraint firstItem="e2c-rf-mHA" firstAttribute="top" secondItem="J0L-Sb-ykS" secondAttribute="bottom" constant="378" id="z19-rP-ohO"/>
+                            <constraint firstItem="ZkD-1u-qqP" firstAttribute="centerX" secondItem="8y3-Gi-EZ0" secondAttribute="centerX" id="1Lj-8K-4NU"/>
+                            <constraint firstItem="lte-C9-8cd" firstAttribute="top" secondItem="gJN-sm-a8r" secondAttribute="bottom" constant="139" id="1VI-km-Sqh"/>
+                            <constraint firstItem="pP2-9g-PW6" firstAttribute="leading" secondItem="8y3-Gi-EZ0" secondAttribute="leadingMargin" constant="71" id="32j-mp-AbO"/>
+                            <constraint firstItem="pP2-9g-PW6" firstAttribute="centerX" secondItem="8y3-Gi-EZ0" secondAttribute="centerX" id="355-7x-b3z"/>
+                            <constraint firstItem="pP2-9g-PW6" firstAttribute="leading" secondItem="8y3-Gi-EZ0" secondAttribute="leadingMargin" constant="25" id="IJx-GI-hXa"/>
+                            <constraint firstItem="lte-C9-8cd" firstAttribute="centerX" secondItem="8y3-Gi-EZ0" secondAttribute="centerX" id="XFM-Vv-vWc"/>
+                            <constraint firstItem="pP2-9g-PW6" firstAttribute="leading" secondItem="8y3-Gi-EZ0" secondAttribute="leadingMargin" constant="71" id="cLH-HS-vDu"/>
+                            <constraint firstItem="pP2-9g-PW6" firstAttribute="top" secondItem="gJN-sm-a8r" secondAttribute="bottom" constant="456" id="ew6-Hq-SSu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pP2-9g-PW6" secondAttribute="trailing" constant="25" id="h99-3H-xyH"/>
+                            <constraint firstItem="ZkD-1u-qqP" firstAttribute="top" secondItem="gJN-sm-a8r" secondAttribute="bottom" constant="359" id="rIp-3o-k1T"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="HbM-fq-sWS"/>
-                                <exclude reference="pBx-yh-FZt"/>
-                                <exclude reference="EmD-4A-X62"/>
+                                <exclude reference="32j-mp-AbO"/>
+                                <exclude reference="355-7x-b3z"/>
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="featured" id="Maf-YB-TI3"/>
+                    <tabBarItem key="tabBarItem" title="Random Shortcut" id="MgS-xJ-Fkf"/>
                     <connections>
-                        <outlet property="shortcutDescriptionLabel" destination="e2c-rf-mHA" id="VaO-Ju-FqX"/>
-                        <outlet property="shortcutLabel" destination="W5v-jm-0iO" id="fBL-WJ-SKZ"/>
-                        <outlet property="showShortcutButton" destination="sjH-aU-vKa" id="UD4-zP-u1B"/>
+                        <outlet property="shortcutDescriptionLabel" destination="ZkD-1u-qqP" id="ma0-os-H71"/>
+                        <outlet property="shortcutLabel" destination="lte-C9-8cd" id="qNl-b3-OCS"/>
+                        <outlet property="showShortcutButton" destination="pP2-9g-PW6" id="aTX-DG-7dU"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yH7-7Q-Dgz" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6AB-Ff-CcV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-264" y="-14"/>
+            <point key="canvasLocation" x="-264" y="-24"/>
         </scene>
     </scenes>
 </document>
