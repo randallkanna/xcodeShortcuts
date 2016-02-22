@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B531E77F1C7A408800E87AE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B531E77E1C7A408800E87AE9 /* AppDelegate.swift */; };
-		B531E7811C7A408800E87AE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B531E7801C7A408800E87AE9 /* ViewController.swift */; };
 		B531E7841C7A408800E87AE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B531E7821C7A408800E87AE9 /* Main.storyboard */; };
 		B531E7861C7A408800E87AE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B531E7851C7A408800E87AE9 /* Assets.xcassets */; };
 		B531E7891C7A408800E87AE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B531E7871C7A408800E87AE9 /* LaunchScreen.storyboard */; };
@@ -38,7 +37,6 @@
 /* Begin PBXFileReference section */
 		B531E77B1C7A408800E87AE9 /* xcodeShortcuts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xcodeShortcuts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B531E77E1C7A408800E87AE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B531E7801C7A408800E87AE9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B531E7831C7A408800E87AE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B531E7851C7A408800E87AE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B531E7881C7A408800E87AE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -102,7 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				B531E77E1C7A408800E87AE9 /* AppDelegate.swift */,
-				B531E7801C7A408800E87AE9 /* ViewController.swift */,
 				B531E7B21C7A901600E87AE9 /* RandomShortcutViewController.swift */,
 				B531E7AC1C7A4B7600E87AE9 /* ShortcutList.swift */,
 				B531E7821C7A408800E87AE9 /* Main.storyboard */,
@@ -199,6 +196,7 @@
 				TargetAttributes = {
 					B531E77A1C7A408800E87AE9 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = FSS3Y3K34S;
 					};
 					B531E78E1C7A408800E87AE9 = {
 						CreatedOnToolsVersion = 7.2;
@@ -263,7 +261,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B531E7B31C7A901600E87AE9 /* RandomShortcutViewController.swift in Sources */,
-				B531E7811C7A408800E87AE9 /* ViewController.swift in Sources */,
 				B531E77F1C7A408800E87AE9 /* AppDelegate.swift in Sources */,
 				B531E7AD1C7A4B7600E87AE9 /* ShortcutList.swift in Sources */,
 			);
@@ -405,6 +402,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = xcodeShortcuts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.randallkanna.xcodeShortcuts;
@@ -416,6 +414,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = xcodeShortcuts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.randallkanna.xcodeShortcuts;
