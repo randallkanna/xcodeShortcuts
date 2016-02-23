@@ -41,4 +41,11 @@ class RandomShortcutViewController: UIViewController {
         shortcutHeader.text = shortcutItem[2]
     }
 
+    @IBAction func infoButtonTapped() {
+        let alertController = UIAlertController(title: "Hint", message:
+            "Tap the screen to see more shortcuts", preferredStyle: UIAlertControllerStyle.Alert)
+        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
+    }
 }
