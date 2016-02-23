@@ -10,10 +10,9 @@ import UIKit
 
 class RandomShortcutViewController: UIViewController {
 
+    @IBOutlet weak var shortcutHeader: UILabel!
     @IBOutlet weak var shortcutLabel: UILabel!
-    
     @IBOutlet weak var shortcutDescriptionLabel: UILabel!
-    
     @IBOutlet weak var showShortcutButton: UIButton!
     
     let shortcuts = ShortcutList()
@@ -25,6 +24,7 @@ class RandomShortcutViewController: UIViewController {
         
         shortcutLabel.text = shortcutItem[0]
         shortcutDescriptionLabel.text = shortcutItem[1]
+        shortcutHeader.text = shortcutItem[2]
     }
     
     override func didReceiveMemoryWarning() {
@@ -38,6 +38,7 @@ class RandomShortcutViewController: UIViewController {
         
         shortcutLabel.text = shortcutItem[0]
         shortcutDescriptionLabel.text = shortcutItem[1]
+        shortcutHeader.text = shortcutItem[2]
     }
 
 }

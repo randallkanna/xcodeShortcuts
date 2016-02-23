@@ -72,6 +72,12 @@
                                     <action selector="showShortcuts" destination="7J4-YQ-mdz" eventType="touchUpInside" id="c6y-79-SDT"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbb-no-y5S">
+                                <rect key="frame" x="268" y="20" width="65" height="31"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.22352941176470587" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -85,6 +91,7 @@
                             <constraint firstItem="pP2-9g-PW6" firstAttribute="top" secondItem="gJN-sm-a8r" secondAttribute="bottom" constant="497" id="6Yb-Da-mtd"/>
                             <constraint firstItem="lte-C9-8cd" firstAttribute="centerX" secondItem="8y3-Gi-EZ0" secondAttribute="centerX" id="920-77-jp5"/>
                             <constraint firstItem="pP2-9g-PW6" firstAttribute="leading" secondItem="8y3-Gi-EZ0" secondAttribute="leadingMargin" constant="15" id="AYH-V4-e1o"/>
+                            <constraint firstItem="qbb-no-y5S" firstAttribute="top" secondItem="gJN-sm-a8r" secondAttribute="bottom" id="BDo-Fn-Zfu"/>
                             <constraint firstItem="ZkD-1u-qqP" firstAttribute="centerX" secondItem="8y3-Gi-EZ0" secondAttribute="centerX" id="BZq-d0-y3e"/>
                             <constraint firstItem="pP2-9g-PW6" firstAttribute="centerX" secondItem="8y3-Gi-EZ0" secondAttribute="centerX" id="FBM-uE-Oc1"/>
                             <constraint firstItem="pP2-9g-PW6" firstAttribute="top" secondItem="gJN-sm-a8r" secondAttribute="bottom" constant="30" id="HbD-J1-ssO"/>
@@ -93,6 +100,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="pP2-9g-PW6" secondAttribute="trailing" constant="53" id="Keo-gu-ewL"/>
                             <constraint firstItem="ZkD-1u-qqP" firstAttribute="top" secondItem="gJN-sm-a8r" secondAttribute="bottom" constant="347" id="LHq-H5-EVv"/>
                             <constraint firstItem="ZkD-1u-qqP" firstAttribute="top" secondItem="gJN-sm-a8r" secondAttribute="bottom" constant="383" id="MdO-EE-XKZ"/>
+                            <constraint firstItem="qbb-no-y5S" firstAttribute="centerX" secondItem="8y3-Gi-EZ0" secondAttribute="centerX" id="NKP-sI-uuL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lte-C9-8cd" secondAttribute="trailing" constant="25" id="OfQ-7e-Oen"/>
                             <constraint firstAttribute="trailingMargin" secondItem="pP2-9g-PW6" secondAttribute="trailing" constant="15" id="Qf6-Uh-MhC"/>
                             <constraint firstItem="pP2-9g-PW6" firstAttribute="top" secondItem="gJN-sm-a8r" secondAttribute="bottom" id="WMC-4P-E1u"/>
@@ -101,6 +109,7 @@
                             <constraint firstItem="pP2-9g-PW6" firstAttribute="trailing" secondItem="8y3-Gi-EZ0" secondAttribute="trailingMargin" id="a6q-LL-2OP"/>
                             <constraint firstItem="ZkD-1u-qqP" firstAttribute="top" secondItem="gJN-sm-a8r" secondAttribute="bottom" constant="402" id="c3w-Ta-pSC"/>
                             <constraint firstItem="lte-C9-8cd" firstAttribute="leading" secondItem="8y3-Gi-EZ0" secondAttribute="leadingMargin" constant="15" id="d50-jr-Q9Q"/>
+                            <constraint firstItem="qbb-no-y5S" firstAttribute="centerX" secondItem="8y3-Gi-EZ0" secondAttribute="centerX" id="gW1-j6-mjv"/>
                             <constraint firstItem="ZkD-1u-qqP" firstAttribute="centerX" secondItem="8y3-Gi-EZ0" secondAttribute="centerX" id="gd3-ak-v76"/>
                             <constraint firstItem="pP2-9g-PW6" firstAttribute="trailing" secondItem="8y3-Gi-EZ0" secondAttribute="trailingMargin" id="hf6-cU-OIb"/>
                             <constraint firstItem="lte-C9-8cd" firstAttribute="top" secondItem="gJN-sm-a8r" secondAttribute="bottom" constant="168" id="hu3-qC-co9"/>
@@ -111,11 +120,14 @@
                             <constraint firstItem="ZkD-1u-qqP" firstAttribute="top" secondItem="gJN-sm-a8r" secondAttribute="bottom" constant="402" id="trJ-9g-tHL"/>
                             <constraint firstItem="lte-C9-8cd" firstAttribute="top" secondItem="gJN-sm-a8r" secondAttribute="bottom" constant="222" id="u7Y-Ei-b9h"/>
                             <constraint firstItem="lte-C9-8cd" firstAttribute="centerX" secondItem="8y3-Gi-EZ0" secondAttribute="centerX" id="ufg-ZI-JBW"/>
+                            <constraint firstItem="qbb-no-y5S" firstAttribute="top" secondItem="gJN-sm-a8r" secondAttribute="bottom" constant="75" id="uit-Sz-FNc"/>
                             <constraint firstItem="pP2-9g-PW6" firstAttribute="leading" secondItem="8y3-Gi-EZ0" secondAttribute="leadingMargin" constant="89" id="yX4-DK-WNk"/>
                             <constraint firstItem="pP2-9g-PW6" firstAttribute="top" secondItem="gJN-sm-a8r" secondAttribute="bottom" constant="497" id="yeQ-eo-tas"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="gW1-j6-mjv"/>
+                                <exclude reference="uit-Sz-FNc"/>
                                 <exclude reference="0tI-Bi-ZEe"/>
                                 <exclude reference="1Kb-ut-fnb"/>
                                 <exclude reference="1VI-km-Sqh"/>
@@ -152,6 +164,7 @@
                     <tabBarItem key="tabBarItem" systemItem="featured" id="MgS-xJ-Fkf"/>
                     <connections>
                         <outlet property="shortcutDescriptionLabel" destination="ZkD-1u-qqP" id="ma0-os-H71"/>
+                        <outlet property="shortcutHeader" destination="qbb-no-y5S" id="jam-2R-1M7"/>
                         <outlet property="shortcutLabel" destination="lte-C9-8cd" id="qNl-b3-OCS"/>
                         <outlet property="showShortcutButton" destination="pP2-9g-PW6" id="aTX-DG-7dU"/>
                     </connections>
