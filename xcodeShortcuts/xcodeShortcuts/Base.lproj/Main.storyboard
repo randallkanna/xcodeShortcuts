@@ -1,28 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QNH-1S-5TF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
-        <scene sceneID="Qcb-Qc-w0X">
-            <objects>
-                <tabBarController id="QNH-1S-5TF" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="n12-e6-Cw3">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="7J4-YQ-mdz" kind="relationship" relationship="viewControllers" id="j7o-Ou-QGS"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UjW-o8-70t" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-948" y="-298"/>
-        </scene>
         <!--Random Shortcut View Controller-->
         <scene sceneID="UCv-M1-N2c">
             <objects>
@@ -47,8 +30,14 @@
                                 <color key="textColor" red="0.0" green="0.22352941179999999" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pP2-9g-PW6">
-                                <rect key="frame" x="528" y="50" width="37" height="34"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbb-no-y5S">
+                                <rect key="frame" x="268" y="141" width="65" height="31"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.22352941176470587" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pP2-9g-PW6">
+                                <rect key="frame" x="526" y="102" width="37" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="FRW-Kv-wye"/>
                                     <constraint firstAttribute="width" constant="41" id="Lie-Ov-z10"/>
@@ -72,12 +61,6 @@
                                     <action selector="showShortcuts" destination="7J4-YQ-mdz" eventType="touchUpInside" id="c6y-79-SDT"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbb-no-y5S">
-                                <rect key="frame" x="268" y="20" width="65" height="31"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
-                                <color key="textColor" red="0.0" green="0.22352941176470587" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -89,6 +72,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="lte-C9-8cd" secondAttribute="trailing" constant="18" id="5Qx-IO-aHJ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lte-C9-8cd" secondAttribute="trailing" constant="15" id="5XG-kG-wEB"/>
                             <constraint firstItem="pP2-9g-PW6" firstAttribute="top" secondItem="gJN-sm-a8r" secondAttribute="bottom" constant="497" id="6Yb-Da-mtd"/>
+                            <constraint firstItem="qbb-no-y5S" firstAttribute="top" secondItem="gJN-sm-a8r" secondAttribute="bottom" constant="121" id="7T9-6O-tOo"/>
                             <constraint firstItem="lte-C9-8cd" firstAttribute="centerX" secondItem="8y3-Gi-EZ0" secondAttribute="centerX" id="920-77-jp5"/>
                             <constraint firstItem="pP2-9g-PW6" firstAttribute="leading" secondItem="8y3-Gi-EZ0" secondAttribute="leadingMargin" constant="15" id="AYH-V4-e1o"/>
                             <constraint firstItem="qbb-no-y5S" firstAttribute="top" secondItem="gJN-sm-a8r" secondAttribute="bottom" id="BDo-Fn-Zfu"/>
@@ -111,6 +95,7 @@
                             <constraint firstItem="lte-C9-8cd" firstAttribute="leading" secondItem="8y3-Gi-EZ0" secondAttribute="leadingMargin" constant="15" id="d50-jr-Q9Q"/>
                             <constraint firstItem="qbb-no-y5S" firstAttribute="centerX" secondItem="8y3-Gi-EZ0" secondAttribute="centerX" id="gW1-j6-mjv"/>
                             <constraint firstItem="ZkD-1u-qqP" firstAttribute="centerX" secondItem="8y3-Gi-EZ0" secondAttribute="centerX" id="gd3-ak-v76"/>
+                            <constraint firstItem="qbb-no-y5S" firstAttribute="centerX" secondItem="8y3-Gi-EZ0" secondAttribute="centerX" id="hOp-Np-vEB"/>
                             <constraint firstItem="pP2-9g-PW6" firstAttribute="trailing" secondItem="8y3-Gi-EZ0" secondAttribute="trailingMargin" id="hf6-cU-OIb"/>
                             <constraint firstItem="lte-C9-8cd" firstAttribute="top" secondItem="gJN-sm-a8r" secondAttribute="bottom" constant="168" id="hu3-qC-co9"/>
                             <constraint firstItem="pP2-9g-PW6" firstAttribute="centerX" secondItem="8y3-Gi-EZ0" secondAttribute="centerX" id="k5P-74-fpO"/>
@@ -126,6 +111,8 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="BDo-Fn-Zfu"/>
+                                <exclude reference="NKP-sI-uuL"/>
                                 <exclude reference="gW1-j6-mjv"/>
                                 <exclude reference="uit-Sz-FNc"/>
                                 <exclude reference="0tI-Bi-ZEe"/>
@@ -147,9 +134,11 @@
                                 <exclude reference="6Yb-Da-mtd"/>
                                 <exclude reference="AYH-V4-e1o"/>
                                 <exclude reference="FBM-uE-Oc1"/>
+                                <exclude reference="HbD-J1-ssO"/>
                                 <exclude reference="Iab-ux-M5N"/>
                                 <exclude reference="Ipr-Ob-q4y"/>
                                 <exclude reference="Keo-gu-ewL"/>
+                                <exclude reference="Qf6-Uh-MhC"/>
                                 <exclude reference="WMC-4P-E1u"/>
                                 <exclude reference="Yia-g5-Oxh"/>
                                 <exclude reference="a6q-LL-2OP"/>
